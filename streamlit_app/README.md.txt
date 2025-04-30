@@ -37,4 +37,4 @@ What's next
 - Build a dashboard for post-onboarding monitoring
 - Clean up the UI
 
-Let me know if you want to try it or contribute.
+
