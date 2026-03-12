@@ -1,40 +1,44 @@
-OnTrust AI
-==========
+# OnTrust AI
 
-OnTrust AI is a simple app I built to help companies assess supplier risk using machine learning and document verification. 
-The goal is to make vendor onboarding faster and safer by using predictive models and some LLM-based checks.
+OnTrust AI helps companies assess supplier risk using machine learning and LLM-based document verification — making vendor onboarding faster, safer, and more explainable.
 
-What it does
-------------
+---
 
-- Lets you upload supplier data (manually or using a CSV)
-- Predicts the risk level (High, Medium, Low, or Needs Review) using pre-trained ML models
-- Verifies supplier documents (like PDFs or zipped folders) using LLMs
-- Explains why a supplier was flagged using SHAP values
+## What it does
 
-Tech used
----------
+- Upload supplier data manually or via CSV
+- Predicts risk level (**High / Medium / Low / Needs Review**) using pre-trained ML models
+- Verifies supplier documents (PDFs, zip folders) using LLM-based checks
+- Explains why a supplier was flagged using SHAP values for full transparency
 
-- Streamlit (frontend)
-- XGBoost + scikit-learn (ML models)
-- SHAP (for explainability)
-- Some basic LLM logic for document checks
-- Everything is in Python
+---
 
-To run locally
---------------
+## Tech used
 
+| Tool | Purpose |
+|------|---------|
+| Python | Core logic and backend |
+| Streamlit | Interactive frontend |
+| XGBoost + scikit-learn | ML risk prediction models |
+| SHAP | Model explainability |
+| LLM integration | Document verification logic |
+
+---
+
+## To run locally
+
+```bash
 git clone https://github.com/bharath2197/ontrust-ai-platform.git
 cd ontrust-ai-platform/app/streamlit_app
 pip install -r requirements.txt
 streamlit run ontrustai_mvp.py
+```
 
-What's next
------------
+---
 
-- Improve the LLM verification logic
-- Add an API version
-- Build a dashboard for post-onboarding monitoring
-- Clean up the UI
+## What's next
 
-
+- Improve LLM verification logic
+- Add REST API version
+- Build post-onboarding monitoring dashboard
+- UI polish and cleanup
